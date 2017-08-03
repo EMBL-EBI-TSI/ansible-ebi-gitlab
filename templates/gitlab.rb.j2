@@ -17,6 +17,10 @@ gitlab_rails['gitlab_email_from'] = '{{gitlab_email_from}}'
 gitlab_rails['gitlab_email_display_name'] = '{{gitlab_email_display_name}}'
 gitlab_rails['gitlab_email_reply_to'] = '{{gitlab_email_reply_to}}'
 
+### Monitoring settings
+###! IP whitelist controlling access to monitoring endpoints
+# gitlab_rails['monitoring_whitelist'] = ['127.0.0.0/8']
+
 ### Usage Statistics
 gitlab_rails['usage_ping_enabled'] = '{{gitlab_usage_ping_enabled|lower}}'
 
@@ -144,6 +148,11 @@ manage_accounts['enable'] = true
 
 manage_storage_directories['enable'] = true
 manage_storage_directories['manage_etc'] = true
+
+################################################################################
+### Runtime directory
+###! Docs: https://docs.gitlab.com//omnibus/settings/configuration.html#configuring-runtime-directory
+#################################################################################
 
 ################################################################################
 ## Git

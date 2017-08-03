@@ -1,6 +1,6 @@
 ---
 # Gitlab version
-gitlab_version: 9.3.0
+gitlab_version: 9.4.0
 
 # External URL
 gitlab_external_url: '{{ansible_hostname}}'
