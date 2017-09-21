@@ -12,6 +12,8 @@ external_url '{{gitlab_external_url}}'
 ##! Docs: https://gitlab.com/gitlab-org/omnibus-gitlab/blob/master/doc/settings/gitlab.yml.md
 ################################################################################
 
+gitlab_rails['time_zone'] = 'Europe/London'
+
 ### Email Settings
 gitlab_rails['gitlab_email_from'] = '{{gitlab_email_from}}'
 gitlab_rails['gitlab_email_display_name'] = '{{gitlab_email_display_name}}'
